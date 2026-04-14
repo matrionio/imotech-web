@@ -118,6 +118,16 @@ export const VEHICLES: Vehicle[] = [
     category: 'Sedan',
   },
   {
+    id: 'cadillac-xt6',
+    name: 'Cadillac XT6',
+    model: 'Premium Luxury AWD',
+    capacity: 3,
+    luggage: 3,
+    amenities: ['WiFi', 'Leather Seats', 'Climate Control', 'Bottled Water', 'Phone Charger'],
+    images: ['/images/fleet/CadillacXT6.jpg'],
+    category: 'Sedan',
+  },
+  {
     id: 'lincoln-nautilus',
     name: 'Lincoln Nautilus',
     model: 'Reserve AWD',
