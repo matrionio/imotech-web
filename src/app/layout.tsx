@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -51,6 +52,16 @@ export const metadata: Metadata = {
   },
 }
 
+// Safely serializes JSON for embedding in <script> tags by escaping
+// characters that could break out of the HTML script context.
+function safeJsonLd(obj: object): string {
+  return JSON.stringify(obj)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+    .replace(/'/g, '\\u0027')
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -62,7 +73,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+            __html: safeJsonLd({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
               name: 'LIMOTECH',
@@ -91,6 +102,13 @@ export default function RootLayout({
           <WhatsAppButton />
           <ScrollToTop />
         </LanguageProvider>
+        <Script
+          id="tawk-to"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/69df9b901886811c33b04d09/1jm8nfbb2';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();`,
+          }}
+        />
       </body>
     </html>
   )

@@ -19,7 +19,10 @@ function ContactFormInner() {
   const { t, lang } = useLanguage()
   const f = t.form
   const searchParams = useSearchParams()
-  const selectedVehicle = searchParams.get('vehicle')
+  // Validate the URL param: only accept known vehicle names to prevent
+  // arbitrary text from appearing in the UI via crafted URLs.
+  const rawVehicle = searchParams.get('vehicle')
+  const selectedVehicle = rawVehicle && VEHICLES.some((v) => v.name === rawVehicle) ? rawVehicle : null
 
   const serviceOptions = lang === 'fr' ? SERVICE_OPTIONS_FR : SERVICE_OPTIONS_EN
 
@@ -73,15 +76,19 @@ function ContactFormInner() {
       )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <Input id="fullName" label={f.fullName} required placeholder="John Smith" error={errors.fullName?.message}
-          {...register('fullName', { required: `${f.fullName} is required` })} />
+        <Input id="fullName" label={f.fullName} required placeholder="John Smith" error={errors.fullName?.message} maxLength={100}
+          {...register('fullName', { required: `${f.fullName} is required`, maxLength: { value: 100, message: 'Max 100 characters' } })} />
         <Input id="email" label={f.email} type="email" required placeholder="john@example.com" error={errors.email?.message}
           {...register('email', { required: `${f.email} is required`, pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: 'Invalid email' } })} />
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <Input id="phone" label={f.phone} type="tel" required placeholder="+1 (438) 356-0548" error={errors.phone?.message}
-          {...register('phone', { required: `${f.phone} is required` })} />
+        <Input id="phone" label={f.phone} type="tel" required placeholder="+1 (438) 356-0548" error={errors.phone?.message} maxLength={30}
+          {...register('phone', {
+            required: `${f.phone} is required`,
+            maxLength: { value: 30, message: 'Max 30 characters' },
+            pattern: { value: /^[+]?[\d\s\-().]{7,30}$/, message: 'Invalid phone number' },
+          })} />
         <div className="flex flex-col gap-1">
           <label htmlFor="serviceType" className="text-sm font-medium text-text">
             {f.serviceType} <span className="text-secondary">*</span>
@@ -119,15 +126,15 @@ function ContactFormInner() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <Input id="pickupLocation" label={f.pickup} placeholder="123 Rue Sainte-Catherine, Montréal" {...register('pickupLocation')} />
-        <Input id="dropoffLocation" label={f.dropoff} placeholder="Aéroport Montréal-Trudeau (YUL)" {...register('dropoffLocation')} />
+        <Input id="pickupLocation" label={f.pickup} placeholder="123 Rue Sainte-Catherine, Montréal" maxLength={200} {...register('pickupLocation', { maxLength: { value: 200, message: 'Max 200 characters' } })} />
+        <Input id="dropoffLocation" label={f.dropoff} placeholder="Aéroport Montréal-Trudeau (YUL)" maxLength={200} {...register('dropoffLocation', { maxLength: { value: 200, message: 'Max 200 characters' } })} />
       </div>
 
       <div className="flex flex-col gap-1">
         <label htmlFor="specialRequests" className="text-sm font-medium text-text">{f.special}</label>
-        <textarea id="specialRequests" rows={4} placeholder={f.specialPlaceholder}
+        <textarea id="specialRequests" rows={4} placeholder={f.specialPlaceholder} maxLength={1000}
           className="w-full px-4 py-3 bg-white border border-gray-200 text-text placeholder:text-textLight focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-colors duration-200 resize-none"
-          {...register('specialRequests')} />
+          {...register('specialRequests', { maxLength: { value: 1000, message: 'Max 1000 characters' } })} />
       </div>
 
       <Button type="submit" variant="primary" size="lg" fullWidth disabled={formspreeState.submitting} className="gap-2">
