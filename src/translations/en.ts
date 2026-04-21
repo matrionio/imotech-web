@@ -10,7 +10,7 @@ const en = {
   },
   hero: {
     eyebrow: '',
-    title: 'Luxury Transportation Services in Greater Montreal',
+    title: 'Your Private Driver In Greater Montréal',
     subtitle: 'Elevating Every Journey',
     bookRide: 'Book Your Ride',
     viewFleet: 'View Our Fleet',

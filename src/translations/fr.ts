@@ -12,7 +12,7 @@ const fr: Translations = {
   },
   hero: {
     eyebrow: '',
-    title: 'Services de Transport de Luxe dans le Grand Montréal',
+    title: 'Votre Chauffeur Privé dans le Grand Montréal',
     subtitle: 'Élevant chaque trajet',
     bookRide: 'Réserver votre trajet',
     viewFleet: 'Voir notre flotte',
