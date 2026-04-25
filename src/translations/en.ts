@@ -10,7 +10,7 @@ const en = {
   },
   hero: {
     eyebrow: '',
-    title: 'Your Private Driver In Greater Montréal',
+    title: 'Your Private Driver In Greater Montreal',
     subtitle: 'Elevating Every Journey',
     bookRide: 'Book Your Ride',
     viewFleet: 'View Our Fleet',
@@ -190,8 +190,8 @@ const en = {
     airportsTitle: 'Nearest Airports to Montreal',
     airportsSub: 'Montreal is served by multiple airports. Limotech provides luxury transfers from all of them to any destination in Greater Montreal.',
     airports: [
-      { name: 'Montréal-Trudeau International Airport', code: 'YUL', description: "Montreal's main international airport, handling all major airlines. Just 20–25 minutes from downtown, it is the gateway to the city.", distance: '20–25 min from downtown' },
-      { name: 'Montréal–Saint-Hubert Airport', code: 'YHU', description: 'A regional airport on the South Shore, primarily serving private jets, charter flights, and smaller aircraft. Convenient for the South Shore area.', distance: '25–30 min from downtown' },
+      { name: 'Montreal-Trudeau International Airport', code: 'YUL', description: "Montreal's main international airport, handling all major airlines. Just 20–25 minutes from downtown, it is the gateway to the city.", distance: '20–25 min from downtown' },
+      { name: 'Montreal–Saint-Hubert Airport', code: 'YHU', description: 'A regional airport on the South Shore, primarily serving private jets, charter flights, and smaller aircraft. Convenient for the South Shore area.', distance: '25–30 min from downtown' },
     ],
     limoNote: 'Travel in Style',
     limoTitle: 'Arrive in Luxury with Limotech',
@@ -245,7 +245,7 @@ const en = {
     serviceAreas: 'Service Areas',
     serviceAreasList: [
       'Greater Montreal',
-      'Montréal–Trudeau Airport (YUL)',
+      'Montreal–Trudeau Airport (YUL)',
       'Laval', 'Longueuil', 'Brossard', 'Saint-Lambert',
       'Westmount', 'Mont-Royal', 'Dorval',
       'Saint-Hubert Airport',
