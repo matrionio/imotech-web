@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Phone, MapPin } from 'lucide-react'
-import { NAV_LINKS, COMPANY_INFO } from '@/utils/constants'
+import { Menu, X, MapPin } from 'lucide-react'
+import { NAV_LINKS } from '@/utils/constants'
 import Button from '@/components/ui/Button'
 import { useLanguage } from '@/context/LanguageContext'
 
@@ -113,28 +113,11 @@ export default function Header() {
             </div>
 
             {/* Contact Info */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                <span style={{ fontSize: '10px', color: '#C9A961', fontWeight: 600, letterSpacing: '0.15em', textTransform: 'uppercase' }}>Book Now</span>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <Phone size={13} style={{ color: '#C9A961', flexShrink: 0 }} />
-                  <a
-                    href={`tel:${COMPANY_INFO.phone}`}
-                    style={{ fontSize: '12px', color: '#ffffff', textDecoration: 'none', letterSpacing: '0.03em', transition: 'color 0.2s' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = '#C9A961')}
-                    onMouseLeave={e => (e.currentTarget.style.color = '#ffffff')}
-                  >
-                    {COMPANY_INFO.phone}
-                  </a>
-                </div>
-              </div>
-              <span style={{ width: '1px', height: '28px', backgroundColor: '#2d2d2d', flexShrink: 0 }} />
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '6px' }}>
-                <MapPin size={13} style={{ color: '#C9A961', flexShrink: 0, marginTop: '2px' }} />
-                <span style={{ fontSize: '11px', color: '#9ca3af', lineHeight: '1.4' }}>
-                  975 Romeo Vachon Blvd N,<br />Dorval, Quebec H4Y 1H1
-                </span>
-              </div>
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '6px' }}>
+              <MapPin size={13} style={{ color: '#C9A961', flexShrink: 0, marginTop: '2px' }} />
+              <span style={{ fontSize: '11px', color: '#9ca3af', lineHeight: '1.4' }}>
+                975 Romeo Vachon Blvd N,<br />Dorval, Quebec H4Y 1H1
+              </span>
             </div>
           </div>
 

@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import WhatsAppButton from '@/components/shared/WhatsAppButton'
 import ScrollToTop from '@/components/shared/ScrollToTop'
 import { LanguageProvider } from '@/context/LanguageContext'
 
@@ -79,7 +78,6 @@ export default function RootLayout({
               description: 'Luxury Transportation Services — Montreal',
               legalName: '15820715 Canada Inc.',
               url: 'https://limotech.ca',
-              telephone: '+1-XXX-XXX-XXXX',
               email: 'info@limotech.ca',
               address: {
                 '@type': 'PostalAddress',
@@ -98,7 +96,6 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
-          <WhatsAppButton />
           <ScrollToTop />
         </LanguageProvider>
       </body>
