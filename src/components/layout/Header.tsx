@@ -114,8 +114,8 @@ export default function Header() {
 
             {/* Contact Info */}
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '6px' }}>
-              <MapPin size={13} style={{ color: '#C9A961', flexShrink: 0, marginTop: '2px' }} />
-              <span style={{ fontSize: '11px', color: '#9ca3af', lineHeight: '1.4' }}>
+              <MapPin size={15} style={{ color: '#C9A961', flexShrink: 0, marginTop: '2px' }} />
+              <span style={{ fontSize: '13px', color: '#9ca3af', lineHeight: '1.4' }}>
                 975 Romeo Vachon Blvd N,<br />Dorval, Quebec H4Y 1H1
               </span>
             </div>
