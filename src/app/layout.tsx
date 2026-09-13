@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ConsentBanner from '@/components/shared/ConsentBanner'
 import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/layout/Header'
@@ -70,6 +71,33 @@ export default function RootLayout({
   return (
   <html lang="en">
     <head>
+      <Script
+        id="consent-default"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+
+            var savedConsent = null;
+
+            try {
+              savedConsent = localStorage.getItem('limotech-consent-v1');
+            } catch (e) {}
+
+            var consentState =
+              savedConsent === 'granted' ? 'granted' : 'denied';
+
+            gtag('consent', 'default', {
+              analytics_storage: consentState,
+              ad_storage: consentState,
+              ad_user_data: consentState,
+              ad_personalization: consentState,
+              wait_for_update: 500
+            });
+          `,
+        }}
+      />
       {/* Google Tag Manager */}
       <Script
         id="gtm-base"
@@ -108,7 +136,8 @@ export default function RootLayout({
         }}
       />
     </head>
-
+  )
+}
     <body>
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -126,6 +155,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <ScrollToTop />
+        <ConsentBanner />
       </LanguageProvider>
     </body>
   </html>
