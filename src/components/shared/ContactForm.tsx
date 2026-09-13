@@ -1,6 +1,6 @@
 'use client'
 
-import { Suspense } from 'react'
+import { Suspense, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { useForm as useFormspree } from '@formspree/react'
 import { useSearchParams } from 'next/navigation'
@@ -13,6 +13,32 @@ import { useLanguage } from '@/context/LanguageContext'
 
 const SERVICE_OPTIONS_EN = ['Airport Transfer', 'Corporate Transportation', 'Special Events', 'City Tours & Sightseeing', 'Hourly Service', 'Point-to-Point Transfer', 'Other']
 const SERVICE_OPTIONS_FR = ['Transfert aéroport', 'Transport corporatif', 'Événements spéciaux', 'Visites de la ville', 'Service à l\'heure', 'Transfert direct', 'Autre']
+const SERVICE_ID_TO_OPTION = {
+  'airport-transfers': {
+    en: 'Airport Transfer',
+    fr: 'Transfert aéroport',
+  },
+  'corporate-transportation': {
+    en: 'Corporate Transportation',
+    fr: 'Transport corporatif',
+  },
+  'special-events': {
+    en: 'Special Events',
+    fr: 'Événements spéciaux',
+  },
+  'city-tours': {
+    en: 'City Tours & Sightseeing',
+    fr: 'Visites de la ville',
+  },
+  'hourly-service': {
+    en: 'Hourly Service',
+    fr: "Service à l'heure",
+  },
+  'point-to-point': {
+    en: 'Point-to-Point Transfer',
+    fr: 'Transfert direct',
+  },
+} as const
 
 function ContactFormInner() {
   const [formspreeState, formspreeSubmit] = useFormspree('xpqokeoy')
@@ -24,11 +50,35 @@ function ContactFormInner() {
   const rawVehicle = searchParams.get('vehicle')
   const selectedVehicle = rawVehicle && VEHICLES.some((v) => v.name === rawVehicle) ? rawVehicle : null
 
+    const rawService = searchParams.get('service')
+
+  const selectedService =
+    rawService && rawService in SERVICE_ID_TO_OPTION
+      ? SERVICE_ID_TO_OPTION[
+          rawService as keyof typeof SERVICE_ID_TO_OPTION
+        ][lang]
+      : ''
+
   const serviceOptions = lang === 'fr' ? SERVICE_OPTIONS_FR : SERVICE_OPTIONS_EN
 
-  const { register, handleSubmit, reset, formState: { errors } } = useForm<ContactFormData>({
-    defaultValues: { vehicle: selectedVehicle ?? '' },
+  const {
+    register,
+    handleSubmit,
+    reset,
+    setValue,
+    formState: { errors },
+  } = useForm<ContactFormData>({
+    defaultValues: {
+      vehicle: selectedVehicle ?? '',
+      serviceType: selectedService,
+    },
   })
+
+  useEffect(() => {
+    if (selectedService) {
+      setValue('serviceType', selectedService)
+    }
+  }, [selectedService, setValue])
 
   const onSubmit = async (data: ContactFormData) => {
     await formspreeSubmit(data as never)

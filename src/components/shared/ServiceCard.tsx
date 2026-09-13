@@ -46,7 +46,7 @@ export default function ServiceCard({ service, variant = 'default', index = 0 }:
           ))}
         </ul>
       )}
-      <Link href="/contact">
+      <Link href={`/contact?service=${encodeURIComponent(service.id)}`}>
         <Button variant="outline" size="sm">{t.servicesPreview.bookNow}</Button>
       </Link>
     </motion.div>
