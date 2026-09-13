@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -67,40 +68,66 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: safeJsonLd({
-              '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
-              name: 'LIMOTECH',
-              description: 'Luxury Transportation Services — Montreal',
-              legalName: '15820715 Canada Inc.',
-              url: 'https://limotech.ca',
-              email: 'info@limotech.ca',
-              address: {
-                '@type': 'PostalAddress',
-                addressLocality: 'Montreal',
-                addressRegion: 'QC',
-                addressCountry: 'CA',
-              },
-              openingHours: 'Mo-Su 00:00-23:59',
-              priceRange: '$$$$',
-            }),
-          }}
+  <html lang="en">
+    <head>
+      {/* Google Tag Manager */}
+      <Script
+        id="gtm-base"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MKCT2XCV');
+          `,
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeJsonLd({
+            '@context': 'https://schema.org',
+            '@type': 'LocalBusiness',
+            name: 'LIMOTECH',
+            description: 'Luxury Transportation Services — Montreal',
+            legalName: '15820715 Canada Inc.',
+            url: 'https://limotech.ca',
+            email: 'info@limotech.ca',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Montreal',
+              addressRegion: 'QC',
+              addressCountry: 'CA',
+            },
+            openingHours: 'Mo-Su 00:00-23:59',
+            priceRange: '$$$$',
+          }),
+        }}
+      />
+    </head>
+
+    <body>
+      {/* Google Tag Manager (noscript) */}
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MKCT2XCV"
+          height="0"
+          width="0"
+          style={{ display: 'none', visibility: 'hidden' }}
         />
-      </head>
-      <body>
-        <LanguageProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <WhatsAppButton />
-          <ScrollToTop />
-        </LanguageProvider>
-      </body>
-    </html>
-  )
+      </noscript>
+
+      <LanguageProvider>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <WhatsAppButton />
+        <ScrollToTop />
+      </LanguageProvider>
+    </body>
+  </html>
+)
 }
