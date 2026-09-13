@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'LIMOTECH',
     title: 'LIMOTECH | Luxury Transportation Services',
     description:
-      'Premium luxury limousine and transportation services in Toronto. Available 24/7.',
+      'Premium luxury limousine and transportation services in Montreal. Available 24/7.',
     images: [
       {
         url: '/images/og-image.jpg',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'LIMOTECH | Luxury Transportation Services',
-    description: 'Premium luxury limousine and transportation services in Toronto.',
+    description: 'Premium luxury limousine and transportation services in Montreal.',
   },
   robots: {
     index: true,
