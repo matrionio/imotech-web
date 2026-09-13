@@ -136,8 +136,7 @@ export default function RootLayout({
         }}
       />
     </head>
-  )
-}
+  
     <body>
       {/* Google Tag Manager (noscript) */}
       <noscript>
@@ -159,5 +158,5 @@ export default function RootLayout({
       </LanguageProvider>
     </body>
   </html>
-)
+  )
 }
