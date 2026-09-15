@@ -1,6 +1,6 @@
 'use client'
 
-import { Suspense, useEffect } from 'react'
+import { Suspense, useEffect, useRef } from 'react'
 import { useForm } from 'react-hook-form'
 import { useForm as useFormspree } from '@formspree/react'
 import { useSearchParams } from 'next/navigation'
@@ -79,6 +79,19 @@ function ContactFormInner() {
       setValue('serviceType', selectedService)
     }
   }, [selectedService, setValue])
+
+  const leadEventSentRef = useRef(false)
+
+  useEffect(() => {
+    if (formspreeState.succeeded && !leadEventSentRef.current) {
+      leadEventSentRef.current = true
+      window.dataLayer = window.dataLayer || []
+      window.dataLayer.push({
+        event: 'lead_form_success',
+        form_name: 'booking_request',
+      })
+    }
+  }, [formspreeState.succeeded])
 
   const onSubmit = async (data: ContactFormData) => {
     await formspreeSubmit(data as never)
