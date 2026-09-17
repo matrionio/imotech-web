@@ -31,6 +31,10 @@ const MEANING_ICONS: LucideIcon[] = [UserCheck, Car, CalendarCheck]
 const WHY_ICONS: LucideIcon[] = [UserCheck, ShieldCheck, Clock, FileText]
 const NEEDS_ICONS: LucideIcon[] = [Plane, Briefcase, Sparkles, Timer, MapPin, Map]
 
+// The "A Professional Chauffeur" pillar, where chauffeur intent naturally
+// surfaces and a reader may be better served by the chauffeur landing.
+const CHAUFFEUR_MEANING_INDEX = 0
+
 // Self-selection paths, in the same order as the `needs` copy.
 const NEEDS_LINKS = [
   '/services/airport-transfers/',
@@ -142,6 +146,15 @@ export default function MontrealLimoServicePage() {
                   <Icon size={22} className="text-secondary mb-4" aria-hidden="true" />
                   <h3 className="text-text font-serif font-bold text-lg mb-3">{item.title}</h3>
                   <p className="text-textLight text-sm leading-relaxed">{item.description}</p>
+                  {index === CHAUFFEUR_MEANING_INDEX && (
+                    <Link
+                      href="/montreal-chauffeur-service/"
+                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-secondary hover:text-gold transition-colors duration-200"
+                    >
+                      {lp.meaning.chauffeurLinkLabel}
+                      <ArrowRight size={14} aria-hidden="true" />
+                    </Link>
+                  )}
                 </motion.div>
               )
             })}
