@@ -6,6 +6,16 @@ import SectionTitle from '@/components/shared/SectionTitle'
 import ServiceCard from '@/components/shared/ServiceCard'
 import CtaSection from '@/components/home/CtaSection'
 
+// Services that have a dedicated landing page of their own.
+const SERVICE_DETAIL_PAGES: Record<string, string> = {
+  'airport-transfers': '/services/airport-transfers/',
+  'corporate-transportation': '/services/corporate-transportation/',
+  'special-events': '/services/special-events/',
+  'city-tours': '/services/city-tours/',
+  'hourly-service': '/services/hourly-service/',
+  'point-to-point': '/services/point-to-point/',
+}
+
 export default function ServicesPage() {
   const { t } = useLanguage()
 
@@ -27,7 +37,13 @@ export default function ServicesPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {SERVICES.map((service, index) => (
-              <ServiceCard key={service.id} service={service} variant="detailed" index={index} />
+              <ServiceCard
+                key={service.id}
+                service={service}
+                variant="detailed"
+                index={index}
+                detailHref={SERVICE_DETAIL_PAGES[service.id]}
+              />
             ))}
           </div>
         </div>

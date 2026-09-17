@@ -56,12 +56,12 @@ export const SERVICES: Service[] = [
     id: 'city-tours',
     title: 'City Tours & Sightseeing',
     description:
-      'Explore the city in style with our knowledgeable chauffeurs as your guide.',
+      'Private sightseeing transportation for couples, families and groups — with stops and duration you choose.',
     benefits: [
       'Customizable itineraries',
-      'Knowledgeable chauffeurs',
+      'Professional chauffeurs',
       'Flexible duration',
-      'Group tours available',
+      'Group transportation',
     ],
     icon: 'Map',
     slug: 'city-tours',

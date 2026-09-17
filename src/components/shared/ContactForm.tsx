@@ -40,7 +40,17 @@ const SERVICE_ID_TO_OPTION = {
   },
 } as const
 
-function ContactFormInner() {
+type ServiceId = keyof typeof SERVICE_ID_TO_OPTION
+
+interface ContactFormProps {
+  /**
+   * Preselects a service when the form is embedded on a dedicated service
+   * page. A `?service=` URL parameter takes precedence over this default.
+   */
+  defaultService?: ServiceId
+}
+
+function ContactFormInner({ defaultService }: ContactFormProps) {
   const [formspreeState, formspreeSubmit] = useFormspree('xpqokeoy')
   const { t, lang } = useLanguage()
   const f = t.form
@@ -50,14 +60,16 @@ function ContactFormInner() {
   const rawVehicle = searchParams.get('vehicle')
   const selectedVehicle = rawVehicle && VEHICLES.some((v) => v.name === rawVehicle) ? rawVehicle : null
 
-    const rawService = searchParams.get('service')
+  const rawService = searchParams.get('service')
 
-  const selectedService =
+  // A ?service= URL parameter wins; otherwise fall back to the service this
+  // form was embedded for, if any.
+  const serviceId: ServiceId | undefined =
     rawService && rawService in SERVICE_ID_TO_OPTION
-      ? SERVICE_ID_TO_OPTION[
-          rawService as keyof typeof SERVICE_ID_TO_OPTION
-        ][lang]
-      : ''
+      ? (rawService as ServiceId)
+      : defaultService
+
+  const selectedService = serviceId ? SERVICE_ID_TO_OPTION[serviceId][lang] : ''
 
   const serviceOptions = lang === 'fr' ? SERVICE_OPTIONS_FR : SERVICE_OPTIONS_EN
 
@@ -146,7 +158,7 @@ function ContactFormInner() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <Input id="phone" label={f.phone} type="tel" required placeholder="+1 (438) 356-0548" error={errors.phone?.message} maxLength={30}
+        <Input id="phone" label={f.phone} type="tel" required placeholder="+1 (438) 799-8049" error={errors.phone?.message} maxLength={30}
           {...register('phone', {
             required: `${f.phone} is required`,
             maxLength: { value: 30, message: 'Max 30 characters' },
@@ -211,10 +223,10 @@ function ContactFormInner() {
   )
 }
 
-export default function ContactForm() {
+export default function ContactForm({ defaultService }: ContactFormProps) {
   return (
     <Suspense fallback={<div className="h-96 animate-pulse bg-gray-50" />}>
-      <ContactFormInner />
+      <ContactFormInner defaultService={defaultService} />
     </Suspense>
   )
 }

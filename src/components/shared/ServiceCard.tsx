@@ -13,9 +13,11 @@ interface ServiceCardProps {
   service: Service
   variant?: 'default' | 'detailed'
   index?: number
+  /** When set, the card also links to a dedicated page for this service. */
+  detailHref?: string
 }
 
-export default function ServiceCard({ service, variant = 'default', index = 0 }: ServiceCardProps) {
+export default function ServiceCard({ service, variant = 'default', index = 0, detailHref }: ServiceCardProps) {
   const { t } = useLanguage()
   const Icon = iconMap[service.icon] ?? MapPin
 
@@ -46,9 +48,23 @@ export default function ServiceCard({ service, variant = 'default', index = 0 }:
           ))}
         </ul>
       )}
-      <Link href={`/contact?service=${encodeURIComponent(service.id)}`}>
-        <Button variant="outline" size="sm">{t.servicesPreview.bookNow}</Button>
-      </Link>
+      {detailHref ? (
+        <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+          <Link href={`/contact?service=${encodeURIComponent(service.id)}`}>
+            <Button variant="outline" size="sm">{t.servicesPreview.bookNow}</Button>
+          </Link>
+          <Link
+            href={detailHref}
+            className="text-sm font-semibold text-secondary hover:text-gold transition-colors duration-200"
+          >
+            {t.servicesPreview.learnMore}
+          </Link>
+        </div>
+      ) : (
+        <Link href={`/contact?service=${encodeURIComponent(service.id)}`}>
+          <Button variant="outline" size="sm">{t.servicesPreview.bookNow}</Button>
+        </Link>
+      )}
     </motion.div>
   )
 }
