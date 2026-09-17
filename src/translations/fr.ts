@@ -713,6 +713,112 @@ const fr: Translations = {
       subtitle: 'Envoyez-nous votre prise en charge et votre destination, et notre équipe vous reviendra avec une soumission.',
     },
   },
+  stickyCta: {
+    ariaLabel: 'Actions de réservation rapide',
+    book: 'Réservez',
+    call: 'Appelez',
+  },
+  limoPage: {
+    hero: {
+      eyebrow: 'Montréal',
+      title: 'Service de limousine et de chauffeur privé à Montréal',
+      subtitle: "Transport privé haut de gamme dans le Grand Montréal — des chauffeurs professionnels et une flotte de luxe de berlines, VUS et fourgonnettes, réservée à l'avance.",
+      bookRide: 'Réservez votre trajet',
+      callNow: 'Appelez-nous',
+      imageAlt: "Les gratte-ciel du centre-ville de Montréal à l'heure dorée",
+    },
+    trust: {
+      items: [
+        'Chauffeurs professionnels',
+        'Flotte de luxe premium',
+        'Disponible 24/7',
+        "Réservation à l'avance",
+      ],
+    },
+    meaning: {
+      eyebrow: 'Notre service de limousine',
+      title: 'Ce que signifie « service de limousine » chez LIMOTECH',
+      subtitle: 'Un transport privé haut de gamme, organisé autour de votre trajet.',
+      body: "Une réservation LIMOTECH met un chauffeur professionnel au volant et un véhicule de luxe choisi selon votre groupe. Vous nous indiquez où vous allez, nous confirmons les détails, et vous recevez une soumission avant toute réservation.",
+      items: [
+        { title: 'Un chauffeur professionnel', description: "Vérifié, licencié et formé. Votre chauffeur gère le trajet, la circulation et les horaires entre les arrêts." },
+        { title: 'Un véhicule de luxe', description: "Berlines exécutives, VUS pleine grandeur et une fourgonnette de douze passagers — méticuleusement entretenus, avec WiFi, climatisation et eau embouteillée à bord." },
+        { title: "Réservé à l'avance", description: "Votre véhicule et votre chauffeur sont confirmés avant la date, avec la soumission convenue avant votre engagement." },
+      ],
+    },
+    fleet: {
+      eyebrow: 'La flotte',
+      title: 'Les véhicules de notre service de limousine',
+      subtitle: 'Chaque véhicule présenté ici fait partie de la flotte LIMOTECH.',
+      viewAll: 'Voir toute la flotte',
+    },
+    midCta: {
+      title: 'Prêt à réserver votre service de limousine à Montréal ?',
+      subtitle: 'Envoyez-nous les détails de votre trajet et notre équipe vous reviendra avec une soumission.',
+      bookRide: 'Réservez votre trajet',
+      callNow: 'Appelez-nous',
+    },
+    needs: {
+      eyebrow: 'Choisissez votre service',
+      title: 'Un service de limousine pour chaque occasion à Montréal',
+      subtitle: "Choisissez l'option qui correspond à votre trajet. Toutes utilisent la même flotte et les mêmes chauffeurs.",
+      linkLabel: 'En savoir plus',
+      items: [
+        { title: 'Transferts aéroport', description: "Transferts vers et depuis Montréal–Trudeau (YUL), avec suivi des vols et accueil à l'arrivée." },
+        { title: 'Transport corporatif', description: "Déplacements exécutifs pour réunions, visites de clients et événements d'entreprise." },
+        { title: 'Événements spéciaux', description: 'Mariages, galas et célébrations, avec de la place pour tout le groupe.' },
+        { title: "Service à l'heure", description: "Un chauffeur et un véhicule pour un bloc d'heures, avec arrêts multiples inclus." },
+        { title: 'Transferts directs', description: 'Une prise en charge, une destination, avec tarification fixe.' },
+        { title: 'Visites de la ville', description: 'Un transport privé dans Montréal, avec les arrêts de votre choix.' },
+      ],
+    },
+    why: {
+      eyebrow: 'Pourquoi LIMOTECH',
+      title: 'Pourquoi Montréal réserve avec nous',
+      subtitle: "La même norme à chaque réservation, quelle que soit l'occasion.",
+      items: [
+        { title: 'Chauffeurs professionnels', description: 'Vérifiés, licenciés et formés pour le plus haut niveau de service.' },
+        { title: 'Une flotte méticuleusement entretenue', description: 'Toujours impeccable, toujours premium, avec WiFi, climatisation et eau embouteillée à bord.' },
+        { title: 'À toute heure', description: 'Nous opérons à toute heure, jour et nuit, 365 jours par année.' },
+        { title: 'Une soumission avant de réserver', description: 'Une tarification fixe et transparente, sans frais cachés, convenue avant la confirmation de votre réservation.' },
+      ],
+    },
+    howItWorks: {
+      eyebrow: 'Processus simple',
+      title: 'Comment réserver',
+      subtitle: 'Quatre étapes, de votre demande à la réservation confirmée.',
+      steps: [
+        { title: 'Demandez votre trajet', description: "Envoyez-nous votre prise en charge, votre destination, la date et l'heure via le formulaire de demande, par téléphone ou sur WhatsApp." },
+        { title: 'Nous confirmons les détails', description: 'Notre équipe vérifie votre trajet, les passagers, les bagages et le véhicule préféré.' },
+        { title: 'Recevez votre soumission', description: 'Vous recevez un tarif forfaitaire — prix transparent, sans frais cachés.' },
+        { title: 'Confirmez votre réservation', description: 'Approuvez la soumission et votre chauffeur ainsi que votre véhicule sont réservés pour la date.' },
+      ],
+    },
+    areas: {
+      eyebrow: 'Couverture',
+      title: 'Service de limousine dans le Grand Montréal',
+      subtitle: 'Nous conduisons partout dans les zones que nous desservons :',
+      note: "Vous avez une prise en charge et une destination en tête ? Envoyez-nous les deux et notre équipe vous confirmera.",
+    },
+    faq: {
+      eyebrow: 'Bon à savoir',
+      title: 'Questions fréquentes',
+      subtitle: 'Ce que les passagers nous demandent le plus avant de réserver.',
+      items: [
+        { question: 'Quels véhicules utilise votre service de limousine ?', answer: "Notre flotte est composée de berlines de luxe, de VUS pleine grandeur et d'une fourgonnette Mercedes-Benz Sprinter de douze passagers. LIMOTECH n'annonce pas de limousines allongées traditionnelles — notre service de limousine est un transport privé haut de gamme avec chauffeur, dans les véhicules présentés sur notre page de flotte." },
+        { question: 'Combien de passagers pouvez-vous accueillir ?', answer: "Nos berlines accueillent jusqu'à 3 passagers et 3 bagages, nos VUS jusqu'à 6 passagers et 6 bagages, et notre Mercedes-Benz Sprinter jusqu'à 12 passagers et 12 bagages." },
+        { question: 'Puis-je choisir un véhicule en particulier ?', answer: "Oui. Vous pouvez sélectionner un véhicule préféré de notre flotte dans le formulaire de demande, et notre équipe confirmera sa disponibilité pour votre date." },
+        { question: "Combien de temps à l'avance dois-je réserver ?", answer: "Nous n'acceptons pas les réservations le jour même. Pour les trajets dans les 24 heures, veuillez nous contacter directement pour une demande de réservation." },
+        { question: 'Offrez-vous le transport aéroportuaire ?', answer: "Oui. Les transferts aéroport incluent le suivi et la surveillance des vols, l'accueil à l'arrivée et 45 minutes de temps d'attente gratuit pour les prises en charge à l'aéroport." },
+        { question: 'Quelles zones desservez-vous ?', answer: "Partout dans le Grand Montréal, incluant Laval, Longueuil, Brossard, Saint-Lambert, Westmount, Mont-Royal et Dorval, ainsi que les aéroports Montréal–Trudeau (YUL) et Saint-Hubert." },
+      ],
+    },
+    finalCta: {
+      eyebrow: 'Réservez votre trajet',
+      title: 'Demandez votre service de limousine à Montréal',
+      subtitle: 'Envoyez-nous les détails de votre trajet et notre équipe vous reviendra avec une soumission.',
+    },
+  },
   whatsapp: { tooltip: 'Chattez avec nous' },
 }
 

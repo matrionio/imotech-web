@@ -14,7 +14,7 @@ export default function WhatsAppButton() {
       href={`https://wa.me/${COMPANY_INFO.whatsapp}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-5 right-5 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white shadow-lg hover:bg-[#1ebe5d] hover:scale-110 transition-all duration-300 rounded-full"
+      className="fixed bottom-[calc(1.25rem+var(--sticky-cta-offset))] right-5 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white shadow-lg hover:bg-[#1ebe5d] hover:scale-110 transition-all duration-300 rounded-full"
       aria-label={t.whatsapp.tooltip}
       onMouseEnter={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}

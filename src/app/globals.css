@@ -5,6 +5,24 @@
 @tailwind utilities;
 
 @layer base {
+  /*
+   * Bottom offset for floating buttons (WhatsApp, ScrollToTop).
+   *
+   * Defaults to 0, so every page keeps its original positioning. A page that
+   * renders a bottom sticky CTA marks it with [data-sticky-cta]; on small
+   * screens the floating buttons then lift clear of that bar. Desktop is
+   * never affected, because the bar itself is mobile-only.
+   */
+  :root {
+    --sticky-cta-offset: 0px;
+  }
+
+  @media (max-width: 1023px) {
+    body:has([data-sticky-cta]) {
+      --sticky-cta-offset: 4.5rem;
+    }
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;

@@ -711,6 +711,112 @@ const en = {
       subtitle: 'Send us your pickup and your destination, and our team will get back to you with a quote.',
     },
   },
+  stickyCta: {
+    ariaLabel: 'Quick booking actions',
+    book: 'Book Your Ride',
+    call: 'Call Now',
+  },
+  limoPage: {
+    hero: {
+      eyebrow: 'Montreal',
+      title: 'Montreal Limo Service & Private Chauffeur Transportation',
+      subtitle: 'Premium private transportation across Greater Montreal — professional chauffeurs and a luxury fleet of sedans, SUVs and vans, reserved in advance.',
+      bookRide: 'Book Your Ride',
+      callNow: 'Call Now',
+      imageAlt: 'Downtown Montreal skyline at golden hour',
+    },
+    trust: {
+      items: [
+        'Professional chauffeurs',
+        'Premium luxury fleet',
+        'Available 24/7',
+        'Reserved in advance',
+      ],
+    },
+    meaning: {
+      eyebrow: 'Our Limo Service',
+      title: 'What Limo Service Means at LIMOTECH',
+      subtitle: 'Premium private transportation, arranged around your trip.',
+      body: 'A LIMOTECH limo booking puts a professional chauffeur at the wheel and a luxury vehicle chosen to match your party. You tell us where you are going, we confirm the details, and you receive a quote before anything is reserved.',
+      items: [
+        { title: 'A Professional Chauffeur', description: 'Background-checked, licensed and trained. Your chauffeur handles the route, the traffic and the timing between stops.' },
+        { title: 'A Luxury Vehicle', description: 'Executive sedans, full-size SUVs and a twelve-passenger van — meticulously maintained, with WiFi, climate control and bottled water on board.' },
+        { title: 'Reserved in Advance', description: 'Your vehicle and chauffeur are confirmed ahead of the date, with the quote agreed before you commit.' },
+      ],
+    },
+    fleet: {
+      eyebrow: 'The Fleet',
+      title: 'The Vehicles Behind Our Limo Service',
+      subtitle: 'Every vehicle shown here is part of the LIMOTECH fleet.',
+      viewAll: 'View Full Fleet',
+    },
+    midCta: {
+      title: 'Ready to book your Montreal limo service?',
+      subtitle: 'Send us your trip details and our team will get back to you with a quote.',
+      bookRide: 'Book Your Ride',
+      callNow: 'Call Now',
+    },
+    needs: {
+      eyebrow: 'Choose Your Service',
+      title: 'Limo Service for Every Occasion in Montreal',
+      subtitle: 'Pick the option that matches your trip. Every one uses the same fleet and the same chauffeurs.',
+      linkLabel: 'Learn more',
+      items: [
+        { title: 'Airport Transfers', description: 'Transfers to and from Montréal–Trudeau (YUL), with flight tracking and meet & greet at arrival.' },
+        { title: 'Corporate Transportation', description: 'Executive travel for meetings, client visits and corporate events.' },
+        { title: 'Special Events', description: 'Weddings, galas and celebrations, with room for the whole party.' },
+        { title: 'Hourly Service', description: 'A chauffeur and vehicle for a block of hours, with multiple stops included.' },
+        { title: 'Point-to-Point', description: 'One pickup, one destination, with flat-rate pricing.' },
+        { title: 'City Tours & Sightseeing', description: 'Private transportation around Montreal, with the stops you choose.' },
+      ],
+    },
+    why: {
+      eyebrow: 'Why LIMOTECH',
+      title: 'Why Montreal Books With Us',
+      subtitle: 'The same standard on every booking, whatever the occasion.',
+      items: [
+        { title: 'Professional Chauffeurs', description: 'Background-checked, licensed and trained for the highest level of service.' },
+        { title: 'A Meticulously Maintained Fleet', description: 'Always spotless, always premium, with WiFi, climate control and bottled water on board.' },
+        { title: 'Around the Clock', description: 'We operate any time, day or night, 365 days a year.' },
+        { title: 'A Quote Before You Book', description: 'Transparent, flat-rate pricing with no hidden fees, agreed before your reservation is confirmed.' },
+      ],
+    },
+    howItWorks: {
+      eyebrow: 'Simple Process',
+      title: 'How Booking Works',
+      subtitle: 'Four steps from your first request to a confirmed reservation.',
+      steps: [
+        { title: 'Request Your Ride', description: 'Send us your pickup, destination, date and time using the booking request form, by phone, or on WhatsApp.' },
+        { title: 'We Confirm the Details', description: 'Our team reviews your trip, passengers, luggage and preferred vehicle.' },
+        { title: 'Receive Your Quote', description: 'You receive a flat-rate quote — transparent pricing, no hidden fees.' },
+        { title: 'Confirm Your Reservation', description: 'Approve the quote and your chauffeur and vehicle are reserved for the date.' },
+      ],
+    },
+    areas: {
+      eyebrow: 'Coverage',
+      title: 'Limo Service Across Greater Montreal',
+      subtitle: 'We drive throughout the areas we serve:',
+      note: 'Have a pickup and destination in mind? Send us both and our team will confirm.',
+    },
+    faq: {
+      eyebrow: 'Good to Know',
+      title: 'Frequently Asked Questions',
+      subtitle: 'What passengers ask us most before booking.',
+      items: [
+        { question: 'What kind of vehicles does your limo service use?', answer: 'Our fleet is made up of luxury sedans, full-size SUVs and a twelve-passenger Mercedes-Benz Sprinter van. LIMOTECH does not advertise traditional stretch limousines — our limo service is premium private chauffeur transportation in the vehicles listed on our fleet page.' },
+        { question: 'How many passengers can you accommodate?', answer: 'Our sedans carry up to 3 passengers and 3 pieces of luggage, our SUVs up to 6 passengers and 6 pieces, and our Mercedes-Benz Sprinter up to 12 passengers and 12 pieces.' },
+        { question: 'Can I choose a specific vehicle?', answer: 'Yes. You can select a preferred vehicle from our fleet in the booking request form, and our team will confirm availability for your date.' },
+        { question: 'How far in advance should I book?', answer: 'We do not accept same-day bookings. For trips within 24 hours, please contact us directly for a booking request.' },
+        { question: 'Do you provide airport transportation?', answer: 'Yes. Airport transfers include flight tracking and monitoring, meet & greet at arrival, and 45 minutes of complimentary waiting time for airport pickups.' },
+        { question: 'What areas do you serve?', answer: 'Throughout the Greater Montreal area, including Laval, Longueuil, Brossard, Saint-Lambert, Westmount, Mont-Royal and Dorval, as well as Montréal–Trudeau (YUL) and Saint-Hubert airports.' },
+      ],
+    },
+    finalCta: {
+      eyebrow: 'Book Your Ride',
+      title: 'Request Your Montreal Limo Service',
+      subtitle: 'Send us your trip details and our team will get back to you with a quote.',
+    },
+  },
   whatsapp: { tooltip: 'Chat with us' },
 }
 

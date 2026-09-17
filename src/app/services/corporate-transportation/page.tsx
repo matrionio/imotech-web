@@ -56,11 +56,11 @@ export default function CorporateTransportationPage() {
       {/* Hero */}
       <section className="relative bg-primary pt-32 pb-20 overflow-hidden" aria-label="Corporate transportation hero">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
           style={{ backgroundImage: "url('/images/hero-bg2.jpg')" }}
           role="presentation"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80" />
         <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-secondary to-transparent" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
