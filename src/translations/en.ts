@@ -64,6 +64,9 @@ const en = {
     sectionEyebrow: 'Our Full Range',
     sectionTitle: 'Transportation Services',
     sectionSubtitle: 'Every service is delivered with the same commitment to excellence — professional chauffeurs, immaculate vehicles, and seamless logistics.',
+    moreLead: 'Looking for something more specific?',
+    moreLimo: 'Montreal limo service',
+    moreChauffeur: 'Private chauffeur service in Montreal',
   },
   services: {
     airportTransfers: {

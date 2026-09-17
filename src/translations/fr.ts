@@ -66,6 +66,9 @@ const fr: Translations = {
     sectionEyebrow: 'Notre gamme complète',
     sectionTitle: 'Services de transport',
     sectionSubtitle: "Chaque service est livré avec le même engagement envers l'excellence — chauffeurs professionnels, véhicules impeccables et logistique sans faille.",
+    moreLead: 'Vous cherchez quelque chose de plus précis ?',
+    moreLimo: 'Service de limousine à Montréal',
+    moreChauffeur: 'Service de chauffeur privé à Montréal',
   },
   services: {
     airportTransfers: {

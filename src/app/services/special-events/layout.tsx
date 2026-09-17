@@ -25,8 +25,10 @@ export const metadata: Metadata = {
     description: PAGE_DESCRIPTION,
     images: [
       {
-        url: '/images/fleet/Cadillac.png',
-        alt: 'Cadillac Escalade ESV from the LIMOTECH fleet',
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Downtown Montreal skyline',
       },
     ],
   },

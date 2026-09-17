@@ -1,5 +1,7 @@
 'use client'
 
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 import { SERVICES } from '@/utils/constants'
 import SectionTitle from '@/components/shared/SectionTitle'
@@ -45,6 +47,27 @@ export default function ServicesPage() {
                 detailHref={SERVICE_DETAIL_PAGES[service.id]}
               />
             ))}
+          </div>
+
+          {/* Discovery links to the two acquisition landings */}
+          <div className="mt-16 text-center">
+            <p className="text-textLight text-sm mb-4">{t.servicesPage.moreLead}</p>
+            <div className="flex flex-wrap justify-center gap-x-10 gap-y-3">
+              <Link
+                href="/montreal-limo-service/"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-secondary hover:text-gold transition-colors duration-200"
+              >
+                {t.servicesPage.moreLimo}
+                <ArrowRight size={14} aria-hidden="true" />
+              </Link>
+              <Link
+                href="/montreal-chauffeur-service/"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-secondary hover:text-gold transition-colors duration-200"
+              >
+                {t.servicesPage.moreChauffeur}
+                <ArrowRight size={14} aria-hidden="true" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

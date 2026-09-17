@@ -25,8 +25,10 @@ export const metadata: Metadata = {
     description: PAGE_DESCRIPTION,
     images: [
       {
-        url: '/blog/YUL.jpg',
-        alt: 'Montréal–Trudeau International Airport (YUL)',
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Downtown Montreal skyline',
       },
     ],
   },
