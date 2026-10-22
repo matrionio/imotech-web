@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Button from '@/components/ui/Button'
 import { useLanguage } from '@/context/LanguageContext'
-import { COMPANY_INFO } from '@/utils/constants'
 
 export default function CtaSection() {
   const { t } = useLanguage()
@@ -27,7 +26,6 @@ export default function CtaSection() {
         </motion.p>
         <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }} className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/contact"><Button variant="primary" size="lg">{t.cta.bookRide}</Button></Link>
-          <a href={`tel:${COMPANY_INFO.phone}`}><Button variant="outline" size="lg">{t.cta.callUs}</Button></a>
         </motion.div>
       </div>
     </section>

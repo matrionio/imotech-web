@@ -83,7 +83,6 @@ export default function PointToPointPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#book"><Button variant="primary" size="lg">{pp.hero.bookRide}</Button></a>
-            <a href={`tel:${COMPANY_INFO.phone}`}><Button variant="outline" size="lg">{pp.hero.callUs}</Button></a>
           </div>
         </div>
       </section>

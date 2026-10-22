@@ -96,7 +96,6 @@ export default function MontrealLimoServicePage() {
           <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-10">{lp.hero.subtitle}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#book"><Button variant="primary" size="lg">{lp.hero.bookRide}</Button></a>
-            <a href={`tel:${COMPANY_INFO.phone}`}><Button variant="outline" size="lg">{lp.hero.callNow}</Button></a>
           </div>
         </div>
       </section>
@@ -196,7 +195,6 @@ export default function MontrealLimoServicePage() {
           <p className="text-gray-300 mb-8">{lp.midCta.subtitle}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#book"><Button variant="primary" size="lg">{lp.midCta.bookRide}</Button></a>
-            <a href={`tel:${COMPANY_INFO.phone}`}><Button variant="outline" size="lg">{lp.midCta.callNow}</Button></a>
           </div>
         </div>
       </section>

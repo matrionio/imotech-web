@@ -293,7 +293,6 @@ export const COMPANY_INFO = {
   name: 'LIMOTECH',
   legalName: '15820715 Canada Inc.',
   tagline: 'Elevating Every Journey',
-  phone: '+1 (438) 799-8049',
   email: 'info@limotech.ca',
   whatsapp: '14387998049',
   hours: 'Available 24/7',

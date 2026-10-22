@@ -57,7 +57,6 @@ const fr: Translations = {
     title: 'Votre trajet premium vous attend',
     subtitle: "Réservez votre transport de luxe aujourd'hui et élevez chaque trajet à une expérience inoubliable.",
     bookRide: 'Réserver votre trajet',
-    callUs: 'Appelez-nous',
   },
   servicesPage: {
     eyebrow: 'Ce que nous offrons',
@@ -239,7 +238,7 @@ const fr: Translations = {
     successTitle: 'Message envoyé avec succès!',
     successText: 'Merci pour votre demande de réservation. Notre équipe vous contactera sous peu.',
     sendAnother: 'Envoyer un autre message',
-    errorText: 'Une erreur est survenue. Veuillez réessayer ou nous appeler directement.',
+    errorText: 'Une erreur est survenue. Veuillez réessayer.',
     required: 'Les champs marqués * sont obligatoires.',
   },
   footer: {
@@ -265,7 +264,6 @@ const fr: Translations = {
       title: "Service de transfert aéroport et de chauffeur à Montréal",
       subtitle: "Transport privé avec chauffeur vers et depuis l'aéroport international Montréal–Trudeau (YUL), avec suivi des vols, chauffeurs professionnels et flotte premium — disponible 24/7.",
       bookRide: 'Réservez votre trajet',
-      callUs: 'Appelez-nous',
     },
     benefits: {
       eyebrow: 'Pourquoi nous choisir',
@@ -283,7 +281,7 @@ const fr: Translations = {
       title: 'Comment ça fonctionne',
       subtitle: 'Quatre étapes, de votre demande à la réservation confirmée.',
       steps: [
-        { title: 'Demandez votre trajet', description: 'Envoyez-nous les détails de votre trajet via le formulaire de demande, par téléphone ou sur WhatsApp.' },
+        { title: 'Demandez votre trajet', description: 'Envoyez-nous les détails de votre trajet via le formulaire de demande ou sur WhatsApp.' },
         { title: 'Nous confirmons les détails', description: "Notre équipe vérifie le lieu de prise en charge, la destination, l'horaire, les passagers et les bagages." },
         { title: 'Recevez votre soumission', description: 'Vous recevez un tarif forfaitaire pour votre trajet — prix transparent, sans frais cachés.' },
         { title: 'Confirmez votre réservation', description: 'Approuvez la soumission et votre chauffeur ainsi que votre véhicule sont réservés.' },
@@ -332,7 +330,6 @@ const fr: Translations = {
       title: 'Transport corporatif à Montréal',
       subtitle: "Transport privé professionnel pour dirigeants, voyageurs d'affaires, clients et événements corporatifs — avec des chauffeurs vérifiés et une flotte de classe exécutive, disponible 24/7.",
       bookRide: 'Réservez votre trajet',
-      callUs: 'Appelez-nous',
     },
     benefits: {
       eyebrow: 'Pourquoi LIMOTECH pour les affaires',
@@ -366,7 +363,7 @@ const fr: Translations = {
       title: 'Comment ça fonctionne',
       subtitle: "Les mêmes quatre étapes pour un seul transfert ou une journée complète de déplacements d'affaires.",
       steps: [
-        { title: 'Demandez votre trajet', description: 'Envoyez-nous votre itinéraire via le formulaire de demande, par téléphone ou sur WhatsApp.' },
+        { title: 'Demandez votre trajet', description: 'Envoyez-nous votre itinéraire via le formulaire de demande ou sur WhatsApp.' },
         { title: 'Nous confirmons les détails', description: "Notre équipe vérifie le lieu de prise en charge, les destinations, l'horaire, les passagers et les arrêts additionnels." },
         { title: 'Recevez votre soumission', description: 'Vous recevez un tarif forfaitaire pour le trajet — prix transparent, sans frais cachés.' },
         { title: 'Confirmez votre réservation', description: 'Approuvez la soumission et votre chauffeur ainsi que votre véhicule sont réservés.' },
@@ -409,7 +406,6 @@ const fr: Translations = {
       title: 'Transport pour événements spéciaux à Montréal',
       subtitle: 'Transport privé haut de gamme pour mariages, galas, célébrations et occasions corporatives — avec des chauffeurs professionnels et une flotte premium, disponible 24/7.',
       bookRide: 'Réservez votre trajet',
-      callUs: 'Appelez-nous',
     },
     benefits: {
       eyebrow: 'Pourquoi LIMOTECH',
@@ -441,7 +437,7 @@ const fr: Translations = {
       title: 'Comment ça fonctionne',
       subtitle: 'Quatre étapes, réglées avant la date.',
       steps: [
-        { title: 'Demandez votre trajet', description: "Envoyez-nous l'occasion, la date et les détails via le formulaire de demande, par téléphone ou sur WhatsApp." },
+        { title: 'Demandez votre trajet', description: "Envoyez-nous l'occasion, la date et les détails via le formulaire de demande ou sur WhatsApp." },
         { title: 'Nous confirmons les détails', description: "Notre équipe vérifie le lieu de prise en charge, les adresses concernées, l'horaire, les passagers et les arrêts additionnels." },
         { title: 'Recevez votre soumission', description: 'Vous recevez un tarif forfaitaire pour la réservation — prix transparent, sans frais cachés.' },
         { title: 'Confirmez votre réservation', description: 'Approuvez la soumission et votre chauffeur ainsi que votre véhicule sont réservés pour la date.' },
@@ -484,7 +480,6 @@ const fr: Translations = {
       title: 'Transport privé pour découvrir Montréal',
       subtitle: "Découvrez Montréal avec un véhicule privé et un chauffeur professionnel — vous choisissez les arrêts, l'ordre et le rythme, nous nous occupons de la conduite.",
       bookRide: 'Réservez votre trajet',
-      callUs: 'Appelez-nous',
     },
     concept: {
       eyebrow: 'Concrètement',
@@ -517,7 +512,7 @@ const fr: Translations = {
       title: 'Comment réserver',
       subtitle: 'Quatre étapes, de votre demande à la réservation confirmée.',
       steps: [
-        { title: 'Demandez votre trajet', description: "Envoyez-nous votre lieu de prise en charge, les arrêts envisagés et la date souhaitée via le formulaire de demande, par téléphone ou sur WhatsApp." },
+        { title: 'Demandez votre trajet', description: "Envoyez-nous votre lieu de prise en charge, les arrêts envisagés et la date souhaitée via le formulaire de demande ou sur WhatsApp." },
         { title: 'Nous confirmons les détails', description: "Notre équipe vérifie le lieu de prise en charge, les adresses de votre liste, l'horaire, les passagers et les arrêts additionnels." },
         { title: 'Recevez votre soumission', description: 'Vous recevez un tarif forfaitaire pour la réservation — prix transparent, sans frais cachés.' },
         { title: 'Confirmez votre réservation', description: 'Approuvez la soumission et votre chauffeur ainsi que votre véhicule sont réservés pour la date.' },
@@ -561,7 +556,6 @@ const fr: Translations = {
       subtitle: "Un véhicule privé et un chauffeur professionnel pour les heures que vous réservez — avec arrêts multiples inclus et la possibilité de prolonger si votre journée se poursuit.",
       minimumNote: "Les réservations à l'heure débutent avec un minimum de deux heures.",
       bookRide: 'Réservez votre trajet',
-      callUs: 'Appelez-nous',
     },
     flexibility: {
       eyebrow: "Ce qui distingue le service à l'heure",
@@ -637,7 +631,6 @@ const fr: Translations = {
       routeFrom: 'Prise en charge',
       routeTo: 'Destination',
       bookRide: 'Réservez votre trajet',
-      callUs: 'Appelez-nous',
     },
     concept: {
       eyebrow: 'Le service',
@@ -679,7 +672,7 @@ const fr: Translations = {
       title: 'Comment réserver',
       subtitle: 'Quatre étapes, de votre demande à la réservation confirmée.',
       steps: [
-        { title: 'Demandez votre trajet', description: "Envoyez-nous votre adresse de prise en charge, votre destination, ainsi que la date et l'heure via le formulaire de demande, par téléphone ou sur WhatsApp." },
+        { title: 'Demandez votre trajet', description: "Envoyez-nous votre adresse de prise en charge, votre destination, ainsi que la date et l'heure via le formulaire de demande ou sur WhatsApp." },
         { title: 'Nous confirmons les détails', description: 'Notre équipe vérifie la prise en charge, la destination, les horaires, les passagers, les bagages et le véhicule préféré.' },
         { title: 'Recevez votre soumission', description: 'Vous recevez un tarif forfaitaire pour le trajet — prix transparent, sans frais cachés.' },
         { title: 'Confirmez votre réservation', description: 'Approuvez la soumission et votre chauffeur ainsi que votre véhicule sont réservés pour ce trajet.' },
@@ -719,7 +712,6 @@ const fr: Translations = {
   stickyCta: {
     ariaLabel: 'Actions de réservation rapide',
     book: 'Réservez',
-    call: 'Appelez',
   },
   limoPage: {
     hero: {
@@ -727,7 +719,6 @@ const fr: Translations = {
       title: 'Service de limousine et de chauffeur privé à Montréal',
       subtitle: "Transport privé haut de gamme dans le Grand Montréal — des chauffeurs professionnels et une flotte de luxe de berlines, VUS et fourgonnettes, réservée à l'avance.",
       bookRide: 'Réservez votre trajet',
-      callNow: 'Appelez-nous',
       imageAlt: "Les gratte-ciel du centre-ville de Montréal à l'heure dorée",
     },
     trust: {
@@ -760,7 +751,6 @@ const fr: Translations = {
       title: 'Prêt à réserver votre service de limousine à Montréal ?',
       subtitle: 'Envoyez-nous les détails de votre trajet et notre équipe vous reviendra avec une soumission.',
       bookRide: 'Réservez votre trajet',
-      callNow: 'Appelez-nous',
     },
     needs: {
       eyebrow: 'Choisissez votre service',
@@ -792,7 +782,7 @@ const fr: Translations = {
       title: 'Comment réserver',
       subtitle: 'Quatre étapes, de votre demande à la réservation confirmée.',
       steps: [
-        { title: 'Demandez votre trajet', description: "Envoyez-nous votre prise en charge, votre destination, la date et l'heure via le formulaire de demande, par téléphone ou sur WhatsApp." },
+        { title: 'Demandez votre trajet', description: "Envoyez-nous votre prise en charge, votre destination, la date et l'heure via le formulaire de demande ou sur WhatsApp." },
         { title: 'Nous confirmons les détails', description: 'Notre équipe vérifie votre trajet, les passagers, les bagages et le véhicule préféré.' },
         { title: 'Recevez votre soumission', description: 'Vous recevez un tarif forfaitaire — prix transparent, sans frais cachés.' },
         { title: 'Confirmez votre réservation', description: 'Approuvez la soumission et votre chauffeur ainsi que votre véhicule sont réservés pour la date.' },
@@ -829,7 +819,6 @@ const fr: Translations = {
       title: 'Service de chauffeur privé à Montréal',
       subtitle: "Un chauffeur professionnel et un véhicule haut de gamme, réservés à l'avance — pour vos déplacements d'affaires, transferts aéroport, soirées et déplacements privés dans le Grand Montréal.",
       bookRide: 'Réservez votre trajet',
-      callNow: 'Appelez-nous',
       imageAlt: 'Le centre-ville de Montréal au crépuscule',
     },
     trust: {
@@ -880,7 +869,6 @@ const fr: Translations = {
       title: 'Prêt à réserver un chauffeur à Montréal ?',
       subtitle: 'Envoyez-nous les détails de votre trajet et notre équipe vous reviendra avec une soumission.',
       bookRide: 'Réservez votre trajet',
-      callNow: 'Appelez-nous',
     },
     fleet: {
       eyebrow: 'Les véhicules',
@@ -893,7 +881,7 @@ const fr: Translations = {
       title: 'Comment réserver',
       subtitle: 'Quatre étapes, de votre demande à un chauffeur confirmé.',
       steps: [
-        { title: 'Demandez votre trajet', description: "Envoyez-nous votre prise en charge, votre destination, la date et l'heure via le formulaire de demande, par téléphone ou sur WhatsApp." },
+        { title: 'Demandez votre trajet', description: "Envoyez-nous votre prise en charge, votre destination, la date et l'heure via le formulaire de demande ou sur WhatsApp." },
         { title: 'Nous confirmons les détails', description: 'Notre équipe vérifie votre trajet, les passagers, les bagages et le véhicule préféré.' },
         { title: 'Recevez votre soumission', description: 'Vous recevez un tarif forfaitaire — prix transparent, sans frais cachés.' },
         { title: 'Confirmez votre réservation', description: 'Approuvez la soumission et votre chauffeur ainsi que votre véhicule sont réservés pour la date.' },

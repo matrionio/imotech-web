@@ -55,7 +55,6 @@ const en = {
     title: 'Your Premium Ride Awaits',
     subtitle: 'Book your luxury transportation today and elevate every journey to an unforgettable experience.',
     bookRide: 'Book Your Ride',
-    callUs: 'Call Us Now',
   },
   servicesPage: {
     eyebrow: 'What We Offer',
@@ -237,7 +236,7 @@ const en = {
     successTitle: 'Message Sent Successfully!',
     successText: 'Thank you for your reservation request. Our team will contact you shortly.',
     sendAnother: 'Send Another Message',
-    errorText: 'Something went wrong. Please try again or call us directly.',
+    errorText: 'Something went wrong. Please try again.',
     required: 'Fields marked with * are required.',
   },
   footer: {
@@ -263,7 +262,6 @@ const en = {
       title: 'Montreal Airport Transfer & Chauffeur Service',
       subtitle: 'Private chauffeured transportation to and from Montréal–Trudeau International Airport (YUL), with flight tracking, professional chauffeurs and a premium fleet — available 24/7.',
       bookRide: 'Book Your Ride',
-      callUs: 'Call Us Now',
     },
     benefits: {
       eyebrow: 'Why Book With Us',
@@ -281,7 +279,7 @@ const en = {
       title: 'How It Works',
       subtitle: 'Four steps from your first request to a confirmed reservation.',
       steps: [
-        { title: 'Request Your Ride', description: 'Send us your trip details using the booking request form, by phone, or on WhatsApp.' },
+        { title: 'Request Your Ride', description: 'Send us your trip details using the booking request form or on WhatsApp.' },
         { title: 'We Confirm the Details', description: 'Our team reviews your pickup, destination, timing, passengers, and luggage.' },
         { title: 'Receive Your Quote', description: 'You receive a flat-rate quote for your trip — transparent pricing, no hidden fees.' },
         { title: 'Confirm Your Reservation', description: 'Approve the quote and your chauffeur and vehicle are reserved for you.' },
@@ -330,7 +328,6 @@ const en = {
       title: 'Corporate Transportation in Montreal',
       subtitle: 'Professional private transportation for executives, business travellers, clients and corporate events — with vetted chauffeurs and an executive-class fleet, available 24/7.',
       bookRide: 'Book Your Ride',
-      callUs: 'Call Us Now',
     },
     benefits: {
       eyebrow: 'Why LIMOTECH for Business',
@@ -364,7 +361,7 @@ const en = {
       title: 'How It Works',
       subtitle: 'The same four steps for a single transfer or a full day of business travel.',
       steps: [
-        { title: 'Request Your Ride', description: 'Send us your itinerary using the booking request form, by phone, or on WhatsApp.' },
+        { title: 'Request Your Ride', description: 'Send us your itinerary using the booking request form or on WhatsApp.' },
         { title: 'We Confirm the Details', description: 'Our team reviews your pickup, destinations, schedule, passengers and any additional stops.' },
         { title: 'Receive Your Quote', description: 'You receive a flat-rate quote for the trip — transparent pricing, no hidden fees.' },
         { title: 'Confirm Your Reservation', description: 'Approve the quote and your chauffeur and vehicle are reserved for you.' },
@@ -407,7 +404,6 @@ const en = {
       title: 'Special Event Transportation in Montreal',
       subtitle: 'Premium private transportation for weddings, galas, celebrations and corporate occasions — with professional chauffeurs and a premium fleet, available 24/7.',
       bookRide: 'Book Your Ride',
-      callUs: 'Call Us Now',
     },
     benefits: {
       eyebrow: 'Why LIMOTECH',
@@ -439,7 +435,7 @@ const en = {
       title: 'How It Works',
       subtitle: 'Four steps, settled ahead of the date.',
       steps: [
-        { title: 'Request Your Ride', description: 'Send us the occasion, the date and the details using the booking request form, by phone, or on WhatsApp.' },
+        { title: 'Request Your Ride', description: 'Send us the occasion, the date and the details using the booking request form or on WhatsApp.' },
         { title: 'We Confirm the Details', description: 'Our team reviews your pickup, the addresses involved, timing, passengers and any additional stops.' },
         { title: 'Receive Your Quote', description: 'You receive a flat-rate quote for the booking — transparent pricing, no hidden fees.' },
         { title: 'Confirm Your Reservation', description: 'Approve the quote and your chauffeur and vehicle are reserved for the date.' },
@@ -482,7 +478,6 @@ const en = {
       title: 'Private Montreal City Tours & Sightseeing Transportation',
       subtitle: 'Explore Montreal with a private vehicle and a professional chauffeur — you choose the stops, the order and the pace, and we handle the driving.',
       bookRide: 'Book Your Ride',
-      callUs: 'Call Us Now',
     },
     concept: {
       eyebrow: 'How It Works in Practice',
@@ -515,7 +510,7 @@ const en = {
       title: 'How to Book',
       subtitle: 'Four steps from your first request to a confirmed reservation.',
       steps: [
-        { title: 'Request Your Ride', description: 'Send us your pickup, the stops you have in mind and your preferred date using the booking request form, by phone, or on WhatsApp.' },
+        { title: 'Request Your Ride', description: 'Send us your pickup, the stops you have in mind and your preferred date using the booking request form or on WhatsApp.' },
         { title: 'We Confirm the Details', description: 'Our team reviews your pickup, the addresses on your list, timing, passengers and any additional stops.' },
         { title: 'Receive Your Quote', description: 'You receive a flat-rate quote for the booking — transparent pricing, no hidden fees.' },
         { title: 'Confirm Your Reservation', description: 'Approve the quote and your chauffeur and vehicle are reserved for the date.' },
@@ -559,7 +554,6 @@ const en = {
       subtitle: 'A private vehicle and professional chauffeur for the hours you book — with multiple stops included and the option to extend if your day runs longer.',
       minimumNote: 'Hourly bookings start at a two-hour minimum.',
       bookRide: 'Book Your Ride',
-      callUs: 'Call Us Now',
     },
     flexibility: {
       eyebrow: 'How Hourly Differs',
@@ -635,7 +629,6 @@ const en = {
       routeFrom: 'Pickup',
       routeTo: 'Destination',
       bookRide: 'Book Your Ride',
-      callUs: 'Call Us Now',
     },
     concept: {
       eyebrow: 'The Service',
@@ -677,7 +670,7 @@ const en = {
       title: 'How to Book',
       subtitle: 'Four steps from your first request to a confirmed reservation.',
       steps: [
-        { title: 'Request Your Ride', description: 'Send us your pickup address, your destination, and the date and time using the booking request form, by phone, or on WhatsApp.' },
+        { title: 'Request Your Ride', description: 'Send us your pickup address, your destination, and the date and time using the booking request form or on WhatsApp.' },
         { title: 'We Confirm the Details', description: 'Our team reviews your pickup, destination, timing, passengers, luggage and preferred vehicle.' },
         { title: 'Receive Your Quote', description: 'You receive a flat-rate quote for the trip — transparent pricing, no hidden fees.' },
         { title: 'Confirm Your Reservation', description: 'Approve the quote and your chauffeur and vehicle are reserved for that trip.' },
@@ -717,7 +710,6 @@ const en = {
   stickyCta: {
     ariaLabel: 'Quick booking actions',
     book: 'Book Your Ride',
-    call: 'Call Now',
   },
   limoPage: {
     hero: {
@@ -725,7 +717,6 @@ const en = {
       title: 'Montreal Limo Service & Private Chauffeur Transportation',
       subtitle: 'Premium private transportation across Greater Montreal — professional chauffeurs and a luxury fleet of sedans, SUVs and vans, reserved in advance.',
       bookRide: 'Book Your Ride',
-      callNow: 'Call Now',
       imageAlt: 'Downtown Montreal skyline at golden hour',
     },
     trust: {
@@ -758,7 +749,6 @@ const en = {
       title: 'Ready to book your Montreal limo service?',
       subtitle: 'Send us your trip details and our team will get back to you with a quote.',
       bookRide: 'Book Your Ride',
-      callNow: 'Call Now',
     },
     needs: {
       eyebrow: 'Choose Your Service',
@@ -790,7 +780,7 @@ const en = {
       title: 'How Booking Works',
       subtitle: 'Four steps from your first request to a confirmed reservation.',
       steps: [
-        { title: 'Request Your Ride', description: 'Send us your pickup, destination, date and time using the booking request form, by phone, or on WhatsApp.' },
+        { title: 'Request Your Ride', description: 'Send us your pickup, destination, date and time using the booking request form or on WhatsApp.' },
         { title: 'We Confirm the Details', description: 'Our team reviews your trip, passengers, luggage and preferred vehicle.' },
         { title: 'Receive Your Quote', description: 'You receive a flat-rate quote — transparent pricing, no hidden fees.' },
         { title: 'Confirm Your Reservation', description: 'Approve the quote and your chauffeur and vehicle are reserved for the date.' },
@@ -827,7 +817,6 @@ const en = {
       title: 'Private Chauffeur Service in Montreal',
       subtitle: 'A professional chauffeur and a premium vehicle, reserved in advance — for business travel, airport transfers, evenings out and private transportation across Greater Montreal.',
       bookRide: 'Book Your Ride',
-      callNow: 'Call Now',
       imageAlt: 'Downtown Montreal at dusk',
     },
     trust: {
@@ -878,7 +867,6 @@ const en = {
       title: 'Ready to book a chauffeur in Montreal?',
       subtitle: 'Send us your trip details and our team will get back to you with a quote.',
       bookRide: 'Book Your Ride',
-      callNow: 'Call Now',
     },
     fleet: {
       eyebrow: 'The Vehicles',
@@ -891,7 +879,7 @@ const en = {
       title: 'How Booking Works',
       subtitle: 'Four steps from your first request to a confirmed chauffeur.',
       steps: [
-        { title: 'Request Your Ride', description: 'Send us your pickup, destination, date and time using the booking request form, by phone, or on WhatsApp.' },
+        { title: 'Request Your Ride', description: 'Send us your pickup, destination, date and time using the booking request form or on WhatsApp.' },
         { title: 'We Confirm the Details', description: 'Our team reviews your trip, passengers, luggage and preferred vehicle.' },
         { title: 'Receive Your Quote', description: 'You receive a flat-rate quote — transparent pricing, no hidden fees.' },
         { title: 'Confirm Your Reservation', description: 'Approve the quote and your chauffeur and vehicle are reserved for the date.' },

@@ -65,7 +65,6 @@ export default function HourlyServicePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#book"><Button variant="primary" size="lg">{hp.hero.bookRide}</Button></a>
-            <a href={`tel:${COMPANY_INFO.phone}`}><Button variant="outline" size="lg">{hp.hero.callUs}</Button></a>
           </div>
         </div>
       </section>

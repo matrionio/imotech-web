@@ -65,7 +65,6 @@ const structuredData = {
         name: COMPANY_INFO.name,
         legalName: COMPANY_INFO.legalName,
         url: SITE_URL,
-        telephone: COMPANY_INFO.phone,
         email: COMPANY_INFO.email,
         address: {
           '@type': 'PostalAddress',
@@ -97,7 +96,6 @@ const structuredData = {
       availableChannel: {
         '@type': 'ServiceChannel',
         serviceUrl: `${SITE_URL}/contact/`,
-        servicePhone: COMPANY_INFO.phone,
       },
     },
     {

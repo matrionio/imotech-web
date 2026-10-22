@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Mail, Clock } from 'lucide-react'
+import { Mail, Clock } from 'lucide-react'
 import { NAV_LINKS, COMPANY_INFO } from '@/utils/constants'
 import { useLanguage } from '@/context/LanguageContext'
 
@@ -44,10 +44,6 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold text-sm tracking-widest uppercase mb-6 border-b border-gray-800 pb-3">{t.footer.contact}</h3>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3">
-                <Phone size={16} className="text-secondary flex-shrink-0" />
-                <a href={`tel:${COMPANY_INFO.phone}`} className="text-gray-400 hover:text-secondary text-sm transition-colors duration-200">{COMPANY_INFO.phone}</a>
-              </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-secondary flex-shrink-0" />
                 <a href={`mailto:${COMPANY_INFO.email}`} className="text-gray-400 hover:text-secondary text-sm transition-colors duration-200">{COMPANY_INFO.email}</a>

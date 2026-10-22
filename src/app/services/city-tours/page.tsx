@@ -71,7 +71,6 @@ export default function CityToursPage() {
           <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-10">{ct.hero.subtitle}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#book"><Button variant="primary" size="lg">{ct.hero.bookRide}</Button></a>
-            <a href={`tel:${COMPANY_INFO.phone}`}><Button variant="outline" size="lg">{ct.hero.callUs}</Button></a>
           </div>
         </div>
       </section>

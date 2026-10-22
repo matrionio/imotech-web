@@ -1,7 +1,6 @@
 'use client'
 
-import { CalendarCheck, Phone } from 'lucide-react'
-import { COMPANY_INFO } from '@/utils/constants'
+import { CalendarCheck } from 'lucide-react'
 import { useLanguage } from '@/context/LanguageContext'
 
 /**
@@ -30,14 +29,6 @@ export default function StickyCtaBar() {
         >
           <CalendarCheck size={16} aria-hidden="true" />
           {s.book}
-        </a>
-        <a
-          href={`tel:${COMPANY_INFO.phone}`}
-          aria-label={`${s.call} — ${COMPANY_INFO.phone}`}
-          className="flex-1 inline-flex items-center justify-center gap-2 border border-secondary text-secondary font-semibold text-sm tracking-wide px-4 py-3 transition-colors duration-300 hover:bg-secondary hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
-        >
-          <Phone size={16} aria-hidden="true" />
-          {s.call}
         </a>
       </div>
     </div>

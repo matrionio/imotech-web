@@ -93,7 +93,6 @@ export default function MontrealChauffeurServicePage() {
           <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-10">{cp.hero.subtitle}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#book"><Button variant="primary" size="lg">{cp.hero.bookRide}</Button></a>
-            <a href={`tel:${COMPANY_INFO.phone}`}><Button variant="outline" size="lg">{cp.hero.callNow}</Button></a>
           </div>
         </div>
       </section>
@@ -246,7 +245,6 @@ export default function MontrealChauffeurServicePage() {
           <p className="text-gray-300 mb-8">{cp.midCta.subtitle}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#book"><Button variant="primary" size="lg">{cp.midCta.bookRide}</Button></a>
-            <a href={`tel:${COMPANY_INFO.phone}`}><Button variant="outline" size="lg">{cp.midCta.callNow}</Button></a>
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 'use client'
 
-import { Phone, Mail, Clock, MapPin, RotateCcw, Plane, ShieldCheck, Star } from 'lucide-react'
+import { Mail, Clock, MapPin, RotateCcw, Plane, ShieldCheck, Star } from 'lucide-react'
 import { COMPANY_INFO } from '@/utils/constants'
 import SectionTitle from '@/components/shared/SectionTitle'
 import ContactForm from '@/components/shared/ContactForm'
@@ -18,7 +18,6 @@ export default function ContactPage() {
   const cp = t.contactPage
 
   const contactInfo = [
-    { icon: Phone, label: cp.labels.phone, value: COMPANY_INFO.phone, href: `tel:${COMPANY_INFO.phone}` },
     { icon: Mail, label: cp.labels.email, value: COMPANY_INFO.email, href: `mailto:${COMPANY_INFO.email}` },
     { icon: Clock, label: cp.labels.hours, value: COMPANY_INFO.hours, href: null },
     { icon: MapPin, label: cp.labels.basedIn, value: COMPANY_INFO.address, href: null },

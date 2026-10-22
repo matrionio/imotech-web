@@ -5,7 +5,7 @@ const SITE_URL = 'https://limotech.ca'
 
 const PAGE_TITLE = 'Contact & Booking Requests'
 const PAGE_DESCRIPTION =
-  'Contact LIMOTECH for private chauffeur transportation in Greater Montreal. Send a booking request, call us or reach us by email — available 24/7.'
+  'Contact LIMOTECH for private chauffeur transportation in Greater Montreal. Send a booking request or reach us by email — available 24/7.'
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
